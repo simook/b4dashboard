@@ -1,0 +1,26 @@
+{
+  "name": "b4dashboard",
+  "version": "0.1.0",
+  "authors": [
+    "Kyle Simukka <simook@gmail.com>"
+  ],
+  "description": "B4 Dashboard - Keep it simple",
+  "main": "dist/dashboard.css",
+  "keywords": [
+    "bootstrap",
+    "4",
+    "dashboard"
+  ],
+  "license": "MIT",
+  "homepage": "http://kylesimukka.com",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "bootstrap": "=4.0.0-alpha"
+  }
+}

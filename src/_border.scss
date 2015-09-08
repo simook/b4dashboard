@@ -1,0 +1,49 @@
+@include border-variant('.border-white', $body-bg);
+
+@include border-variant('.border-white-rgba', $body-bg, .25);
+
+// @include border-variant('.border-faded', $gray-lightest);
+
+// @include border-variant('.border-light', $gray-light);
+
+@include border-variant('.border-light-rgba', $gray-light, .25);
+
+// @include border-variant('.border-lighter', $gray-lighter);
+
+// @include border-variant('.border-lighter-rgba', $gray-lighter, .25);
+
+// @include border-variant('.border-gray', $gray);
+
+// @include border-variant('.border-gray-rgba', $gray, .25);
+
+// @include border-variant('.border-inverse', $gray-dark);
+
+// @include border-variant('.border-inverse-rgba', $gray-dark, .25);
+
+// @include border-variant('.border-primary', $brand-primary);
+
+// @include border-variant('.border-primary-rgba', $brand-primary, .25);
+
+// @include border-variant('.border-success', $brand-success);
+
+// @include border-variant('.border-success-rgba', $brand-success, .25);
+
+// @include border-variant('.border-info', $brand-info);
+
+// @include border-variant('.border-info-rgba', $brand-info, .25);
+
+// @include border-variant('.border-warning', $brand-warning);
+
+// @include border-variant('.border-warning-rgba', $brand-warning, .25);
+
+// @include border-variant('.border-danger', $brand-danger);
+
+// @include border-variant('.border-danger-rgba', $brand-danger, .25);
+
+@include border('.b-t', 'top', $border-width);
+
+@include border('.b-b', 'bottom', $border-width);
+
+@include border('.b-r', 'right', $border-width);
+
+@include border('.b-l', 'left', $border-width);

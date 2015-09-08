@@ -1,0 +1,65 @@
+@mixin transition($property, $duration, $timing) {
+  -webkit-transition: $property #{$duration} $timing;
+  -moz-transition: $property #{$duration} $timing;
+  -ms-transition: $property #{$duration} $timing;
+  -o-transition: $property #{$duration} $timing;
+  transition: $property #{$duration} $timing;
+}
+
+@mixin filter($filter-type,$filter-amount) { 
+  -webkit-filter: $filter-type+unquote('(#{$filter-amount})');
+  -moz-filter: $filter-type+unquote('(#{$filter-amount})');
+  -ms-filter: $filter-type+unquote('(#{$filter-amount})');
+  -o-filter: $filter-type+unquote('(#{$filter-amount})');
+  filter: $filter-type+unquote('(#{$filter-amount})');
+}
+
+// Modifed from Bootstrap Mixing
+@mixin bg-rgba-variant($parent, $color) {
+  #{$parent} {
+    color: #fff;
+    background-color: rgba($color, .9);
+    
+    .nav-link {
+      &.active, &:hover {
+        background-color: rgba(darken($color, 2%), .9);
+      }
+      &.active:hover {
+        background-color: darken($color, 5%);
+      }
+    }
+
+    a {
+      color: #fff;
+      &.disabled {
+        color: lighten($color, 20%);
+      }
+    }
+  }
+  a#{$parent} {
+    @include hover-focus {
+      background-color: darken($color, 10%);
+    }
+  }
+}
+
+@mixin border-variant($parent, $color, $rgba: false) {
+  @if $rgba {
+    #{$parent} {
+      border-color: rgba($color, $rgba);
+    }
+  } @else {
+    #{$parent} {
+      border-color: $color;
+    }
+  }
+}
+
+@mixin border($parent, $side, $width) {
+  #{$parent} {
+    // border-#{$side}: $width solid;
+    border-#{$side}-width: $width;
+    border-#{$side}-style: solid;
+
+  }
+}

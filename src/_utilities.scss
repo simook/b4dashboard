@@ -1,0 +1,14 @@
+.bg-white {
+  background-color: $body-bg;
+}
+
+@include bg-variant('.bg-gray', $gray);
+// @include bg-variant('.bg-light', $gray-light);
+@include bg-variant('.bg-lighter', $gray-lighter);
+
+@include bg-rgba-variant('.bg-primary-rgba', $brand-primary);
+@include bg-rgba-variant('.bg-info-rgba', $brand-info);
+@include bg-rgba-variant('.bg-success-rgba', $brand-success);
+@include bg-rgba-variant('.bg-danger-rgba', $brand-danger);
+@include bg-rgba-variant('.bg-warning-rgba', $brand-warning);
+@include bg-rgba-variant('.bg-inverse-rgba', $gray-dark);
